@@ -17,12 +17,9 @@
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <!-- Googlefonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <!-- ion icons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -36,6 +33,111 @@
     <title>Restaurant Website</title>
   </head>
 <body>
-    
+     <nav class="navbar navbar-expand-lg navbar-light bg-light  fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Seafood Bar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#"> Cocktail Bar & Wine</a>
+      <a class="nav-link" href="#"> Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<header>
+
+</header>
+
+<section class="landingPage">
+<div class="container">
+  <div class="textwrap">
+    <div class="item text-center">
+    <h5>Our Restaurant</h5>
+    <p> We've never thought of our restaurants as temples of gastronomy, they're just places where the fish is fresh and the atmosphere alive and full. </p>
+  </div>
+  <div class="item text-center">
+    <h5>Philosophy</h5>
+    <p>Our philosophy and goal is to provide guests with a one-of-a-kind experience by combining delicious food, unique interior design, a great music selection, and friendly service.</p>
+  </div>
+   <div class="item text-center">
+    <h5>Passion for food</h5>
+    <p>Seafood Bar invites you to try our specially composed menu where our Head Chef put the twist on classics and created dishes that bring pleasure to the senses, using high quality ingredients, local products and innovative combinations.</p>
+  </div>
+  <div class="item text-center">
+    <h5>Interior</h5>
+    <p> Seafood Bar is housed in a historic building that dates back to the thirteenth century and was designed in the spirit of the fin-de-siècle. We have made every effort to ensure that the historic elements of our restaurant's interiors are preserved, such as the remains of window frames, hinges, grottoes, and the oldest, original iron window grille in the bar hall, which is the only such monument</p>
+  </div>
+   <div class="item text-center">
+    <h5>Passion</h5>
+    <p> We want to infect our guests with the same enthusiasm for culinary art that we have for it. Our Chef explores new surprising flavors and gives classic dishes a contemporary character by combining modernity and tradition. We use the full potential of the region, bringing our guests closer to the beauty and fertility of Malopolska, by having the best products from local suppliers at our disposal.</p>
+  </div>
+  </div>
+</div>
+</section>
+
+<section class="photo">
+<div class="row">
+  <div class="item  col-sm-4">
+    <img src="./imgs/decor1.jpg" class="img-fluid" alt=""/>
+  </div>
+   <div class="item col-sm-4">
+    <img src="./imgs/station1.jpg" class="img-fluid" alt=""/>
+  </div>
+   <div class="item  col-sm-4">
+    <img src="./imgs/decor4.jpg" class="img-fluid" alt=""/>
+  </div>
+</div>
+</section>
+<section class="contact container-fluid">
+<div class="mainContainer">
+<h3 class="titleSection small text-center pt-3"> Contact</h3>
+<div class="row">
+  <div class="col-md-6">
+    <p>Address</p>
+    <p>Seafood Bar </p>
+    <p>265, Looneyville Grendale Island</p>
+    <p>tel +44 23 9234 75</p>
+    <p>mobile +44 23 9234 75</p>
+    <p>  <a href="mailto:kpemiogokimiebi@gmail.com" class="email-link"> kpemiogokimiebi@gmail.com </a></p></br>
+  </br>
+    <p> OPENING HOURS</p>
+<p>Restaurant: Mon-Thu 10:30 – 00:00 </p>
+<p>Fri 10:30- 01:00 </p>
+<p>Sat 10:30-01:00 </p>
+<p>Sun 10:30-00:00 </p>
+  </div>
+  <div class="form col-md-6">
+    <form  method="POST" action="https://formsubmit.co/kpemiogokimiebi@gmail.com" method="POST">
+      <div class="inputs">
+        <input class="line" type="text" name="text" placeholder="Name" required>
+        <input class="line email" type="email" name="email" placeholder="Example@gmail.com" required>
+        <input class="line subject" type="text" name="subject" placeholder="Subject" required>
+      </div>
+      <div class="box">
+      <textarea class="box message" type="text" name="message" placeholder="Message here..." required></textarea>
+      <input type="hidden" name="_next" value="thankyou.html"> <!--Add website link here-->
+    </div>
+    <div class="button-section">
+      <button class="send-button onclic validate" type="submit">Send</button>
+   </div>
+    </form>
+</div>
+</div>
+</section>
+<footer>
+   <div class="connect">
+      <p>Connect with Me</p>
+      <hr>
+    </div>
+    <div class="social-media">
+      <i><a href="https://github.com/Ebi27" target="_blank"><ion-icon name="logo-github"></ion-icon></a></i>
+      <i><a href="https://www.linkedin.com/in/ebi-kpemi-ogokimi/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></i>
+      <i><a href="mailto:kpemiogokimiebi@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></i>
+    </div>
+</footer>
 </body>
 </html>
