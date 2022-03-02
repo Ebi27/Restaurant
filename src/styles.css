@@ -88,9 +88,13 @@ background: url(../imgs/marble.jpg);
     max-width:440px;
     box-shadow: 0 3px 10px rgb(0 0 0 /.4);
      transition: transform 0.3s ease;
+     height:500px;
 }
 .photo img:hover {
   transform: scale(1.1);
+}
+.photo .last img{
+   max-width:590px;
 }
 .photo .item {
   height:300px;
