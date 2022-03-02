@@ -85,7 +85,7 @@ background: url(../imgs/marble.jpg);
 }
 .photo img{
     height: 550px;
-    max-width:100%;
+    max-width:440px;
     box-shadow: 0 3px 10px rgb(0 0 0 /.4);
      transition: transform 0.3s ease;
 }
@@ -95,6 +95,7 @@ background: url(../imgs/marble.jpg);
 .photo .item {
   height:300px;
   background-size:cover;
+  Margin:0 auto;
   background-position:center;
   border:2px solid #deac54;
 }
