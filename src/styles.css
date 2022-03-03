@@ -12,6 +12,51 @@ body,
 html {
   overflow-x: hidden;
 }
+.navbar {
+  background-color:rgba(0, 0, 0, 0.85) !important;
+  color:#cdad36 !important; 
+  
+}
+@media (min-width:992px) {
+  .navbar {
+    background-color:rgba(0, 0, 0, 0.6) !important;
+  }
+}
+.navbar .nav-item {
+  text-align:center;
+  padding:3px 10px;
+}
+@media (min-width:992px) {
+  .navbar .nav-item {
+    padding:3px 8px;
+  }
+}
+@media (min-width:1250px) {
+  .navbar .nav-item {
+    padding:3px 15px;
+  }
+}
+.navbar .nav-item .nav-link {
+  color:#ebcd5b !important;
+  padding:5px 0;
+  font-size:13px;
+  text-transform:uppercase;
+}
+@media (min-width:992px) {
+  .navbar .nav-item .nav-link {
+    font-size:12px;
+  }
+}
+@media (min-width:1250px) {
+  .navbar .nav-item .nav-link {
+    font-size:14px;
+  }
+}
+@media (min-width:576px) {
+  .navbar .navbar-nav {
+    margin-top:5px;
+  }
+}
 header {
   width: 100vw;
   height: 100vh;
@@ -113,6 +158,7 @@ background: url(../imgs/marble.jpg);
 @media (min-width:922px) {
   .photo .item {
     height:300px;
+}
 }
 @media (min-width:1200px) {
   .photo .item {
@@ -294,6 +340,17 @@ hr {
 ion-icon:hover {
   transform: scale(1.2, 1.2);
 }
+
+@media (min-width:576px) {
+footer  {
+  background-color:#1a1113;
+  height:2px;
+}
+footer .social-media {
+  background-color:#fff;
+  padding-top:5px;
+  padding-bottom:5px;
+}
 .menu {
   min-height:100vh;
   width:100%;
@@ -306,9 +363,29 @@ background: url(../imgs/whiteMarble.jpg);
 .menu-container{
   width: 500px;
 }
-.menu img{
-  width: 100%;
-  
+.seafoodbar {
+  min-height:100vh;
+  width:100%;
+  background-size:cover;
+  background-position:center;
+  overflow:hidden;
+  padding:100px 0 35px 0;
+background: url(../imgs/whiteMarble.jpg);
+}
+@media (min-width:576px) {
+  .seafoodbar {
+ background: url(../imgs/whiteMarble.jpg);
+  }
+}
+@media (min-width:768px) {
+  .seafoodbar {
+ background: url(../imgs/whiteMarble.jpg);
+  }
+}
+@media (min-width:992px) {
+  .seafoodbar {
+    padding:160px 0 70px 0;
+  }
 }
 .cocktail{
    width: 100vw;
@@ -322,21 +399,19 @@ background: url(../imgs/whiteMarble.jpg);
   z-index: 1;
 }
 @media (min-width:576px) {
-  .menu-container {
- background: url(../imgs/whiteMarble.jpg);
-  }
+  .cocktail {
+  background-image: url("../cocktails/Rum-background.jpg");
 }
 @media (min-width:768px) {
-  .menu-container {
- background: url(../imgs/whiteMarble.jpg);
+  .cocktail{
+  background-image: url("../cocktails/Rum-background.jpg");
   }
 }
 @media (min-width:992px) {
-  .mwnu-container {
+  .cocktail {
     padding:160px 0 70px 0;
   }
 }
-
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
@@ -359,17 +434,3 @@ background: url(../imgs/whiteMarble.jpg);
     transform: translateX(0vw);
   }
 }
-}
-
-
- .line {
-    width: 90vw;
-    height: 7vw;
-  }
-  .box {
-    width: 90vw;
-    height:45vw;
-  }
-  .send-button{
-    margin-bottom: 10vw;
-  }
