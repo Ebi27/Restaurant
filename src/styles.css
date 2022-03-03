@@ -294,6 +294,48 @@ hr {
 ion-icon:hover {
   transform: scale(1.2, 1.2);
 }
+.menu {
+  min-height:100vh;
+  width:100%;
+  background-size:cover;
+  background-position:center;
+  overflow:hidden;
+  padding:100px 0 35px 0;
+background: url(../imgs/whiteMarble.jpg);
+}
+.menu-container{
+  width: 500px;
+}
+.menu img{
+  width: 100%;
+  
+}
+.cocktail{
+   width: 100vw;
+  height: 100vh;
+  background-image: url("../cocktails/Rum-background.jpg");
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+@media (min-width:576px) {
+  .menu-container {
+ background: url(../imgs/whiteMarble.jpg);
+  }
+}
+@media (min-width:768px) {
+  .menu-container {
+ background: url(../imgs/whiteMarble.jpg);
+  }
+}
+@media (min-width:992px) {
+  .mwnu-container {
+    padding:160px 0 70px 0;
+  }
+}
 
 @keyframes fadeInLeft {
   0% {
