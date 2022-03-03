@@ -85,16 +85,13 @@ background: url(../imgs/marble.jpg);
 }
 .photo img{
     height: 550px;
-    max-width:440px;
+    width:100%;
     box-shadow: 0 3px 10px rgb(0 0 0 /.4);
      transition: transform 0.3s ease;
      height:500px;
 }
 .photo img:hover {
   transform: scale(1.1);
-}
-.photo .last img{
-   max-width:590px;
 }
 .photo .item {
   height:300px;
@@ -106,20 +103,16 @@ background: url(../imgs/marble.jpg);
 @media (min-width:576px) {
   .photo .item {
     height:100px;
-     width:100px;
   }
 }
 @media (min-width:768px) {
   .photo .item {
     height:400px;
-     width:40px;
   }
 }
 @media (min-width:922px) {
   .photo .item {
     height:300px;
-     width:450px;
-  }
 }
 @media (min-width:1200px) {
   .photo .item {
@@ -176,8 +169,6 @@ background: url(../imgs/marble.jpg);
 .contact .item + .item {
   margin-top:30px;
 }
-
-
  .contact .titleSection {
   color:#cdad36;
   text-transform:uppercase;
@@ -189,20 +180,14 @@ background: url(../imgs/marble.jpg);
 @media (min-width:576px) {
    .contact .titleSection {
     font-size:32px;
+      background-color:#000;
   }
 }
 @media (min-width:992px) {
    .contact .titleSection {
     font-size:36px;
+      background-color:#000;
   }
-}
-
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-  margin: 5vw auto 8vw auto;
 }
 form{
   display: flex;
@@ -262,17 +247,22 @@ form{
   opacity: .8;
   box-shadow: 0 10px 10px rgb(0 0 0 /.7);
 }
-
+.socialmedia{
+   margin-top: 40px;
+    }
 @media (min-width:576px) {
-  .contact-container .form .input {
+  .contact .form .input {
     display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  }
+  background-color:#000;
+  padding-top:30px;
+  padding-bottom:30px;
+}
 }
 @media (min-width:768px) {
-.contact-container .form .input {
+.contact .form .input {
     display: flex;
   flex-direction: column;
   justify-content: center;
@@ -327,3 +317,17 @@ ion-icon:hover {
     transform: translateX(0vw);
   }
 }
+}
+
+
+ .line {
+    width: 90vw;
+    height: 7vw;
+  }
+  .box {
+    width: 90vw;
+    height:45vw;
+  }
+  .send-button{
+    margin-bottom: 10vw;
+  }
