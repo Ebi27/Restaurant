@@ -15,16 +15,18 @@ html {
 .navbar {
   background-color:rgba(0, 0, 0, 0.85) !important;
   color:#cdad36 !important; 
+   position: sticky; top: 0; /* keeping the header fixed to the top*/
   
-}
-@media (min-width:992px) {
-  .navbar {
-    background-color:rgba(0, 0, 0, 0.6) !important;
-  }
 }
 .navbar .nav-item {
   text-align:center;
   padding:3px 10px;
+}
+@media (min-width:992px) {
+  .navbar {
+    background-color:rgba(0, 0, 0, 0.6) !important;
+     color:#ebcd5b !important;
+  }
 }
 @media (min-width:992px) {
   .navbar .nav-item {
@@ -68,6 +70,34 @@ header {
   justify-content: center;
   z-index: 1;
 }
+
+.landingPage {
+  min-height:100vh;
+  width:100%;
+  background-size:cover;
+  background-position:center;
+  overflow:hidden;
+  padding:100px 0 35px 0;
+background: url(../imgs/marble.jpg);
+}
+.text-center {
+    text-align: center!important;
+}
+@media (min-width:576px) {
+  .landingPage {
+ background: url(../imgs/marble.jpg);
+  }
+}
+@media (min-width:768px) {
+  .landingPage {
+ background: url(../imgs/marble.jpg);
+  }
+}
+@media (min-width:992px) {
+  .landingPage {
+    padding:160px 0 70px 0;
+  }
+}
 .container {
     width: 100%;
     padding-right: 15px;
@@ -91,33 +121,7 @@ h5{
  .item p {
     color: #fff;
 }
-.landingPage {
-  min-height:100vh;
-  width:100%;
-  background-size:cover;
-  background-position:center;
-  overflow:hidden;
-  padding:100px 0 35px 0;
-background: url(../imgs/marble.jpg);
-}
-@media (min-width:576px) {
-  .landingPage {
- background: url(../imgs/marble.jpg);
-  }
-}
-@media (min-width:768px) {
-  .landingPage {
- background: url(../imgs/marble.jpg);
-  }
-}
-@media (min-width:992px) {
-  .landingPage {
-    padding:160px 0 70px 0;
-  }
-}
-.text-center {
-    text-align: center!important;
-}
+
 .photo {
     overflow: hidden;
     border-top: 2px solid #deac54;
@@ -133,7 +137,7 @@ background: url(../imgs/marble.jpg);
     width:100%;
     box-shadow: 0 3px 10px rgb(0 0 0 /.4);
      transition: transform 0.3s ease;
-     height:500px;
+    
 }
 .photo img:hover {
   transform: scale(1.1);
@@ -180,18 +184,21 @@ background: url(../imgs/marble.jpg);
     height:600px;
   }
 }
-.contact {
-    background-color: #000;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-.container-fluid {
-    width: 100%;
+
+/* CONTACT AREA CONTACT AREA CONTACT AREA CONTACT AREA CONTACT AREA  */
+.mainContainer{
+   width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
+.contact {
+    background-color: #000;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .contact {
   background-color:#000;
   padding-top:30px;
@@ -235,6 +242,7 @@ background: url(../imgs/marble.jpg);
       background-color:#000;
   }
 }
+ /* FORM AREA FORM AREA FORM AREA FORM AREA  */
 form{
   display: flex;
   flex-direction: column;
@@ -248,8 +256,8 @@ form{
   align-items: center;
 }
 .line {
-  width:25vw;
-  height: 3.5vw;
+  /* width:25vw; */
+  /* height: 3.5vw; */
   margin: 1.2vw;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgb(0 0 0 / 0.2);
@@ -261,8 +269,8 @@ form{
   cursor: text;
 }
 .box {
-  width: 25vw;
-  height: 15vw;
+  /* width: 25vw; */
+  /* height: 15vw; */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgb(0 0 0 / 0.2);
   border:none;
@@ -293,9 +301,7 @@ form{
   opacity: .8;
   box-shadow: 0 10px 10px rgb(0 0 0 /.7);
 }
-.socialmedia{
-   margin-top: 40px;
-    }
+
 @media (min-width:576px) {
   .contact .form .input {
     display: flex;
@@ -316,13 +322,20 @@ form{
   }
 }
 
+/* FOOTER AREA FOOTER AREA FOOTER AREA FOOTER AREA FOOTER AREA  */
+
+.socialmedia{
+   margin-top: 20px;
+    }
+
 .connect {
   text-align: center;
   font-size: 1.5em;
   margin-bottom: 1%;
   text-shadow: 0 2px 10px rgb(0 0 0 / 0.2);
   background: #deac54;;
-}
+ } 
+ 
 hr {
   width: 30%;
   margin: 1.5% auto;
@@ -344,14 +357,19 @@ ion-icon:hover {
 @media (min-width:576px) {
 footer  {
   background-color:#1a1113;
-  height:2px;
+  height:1px;
 }
 footer .social-media {
   background-color:#fff;
-  padding-top:5px;
-  padding-bottom:5px;
+  padding-top:3px;
+  padding-bottom:2px;
 }
-.menu {
+.connect{
+text-align: center;
+}
+}
+/* MENU PAGE  COCKTAIL PAGE MENU PAGE  COCKTAIL PAGE  MENU PAGE COCKTAIL PAGEMENU PAGE */
+.menuPage{
   min-height:100vh;
   width:100%;
   background-size:cover;
@@ -360,58 +378,33 @@ footer .social-media {
   padding:100px 0 35px 0;
 background: url(../imgs/whiteMarble.jpg);
 }
-.menu-container{
-  width: 500px;
+.menuPage img{
+height:550px;
+width:550px;
+object-fit:contain;
+ box-shadow: 0 3px 10px rgb(0 0 0 /.4);
+     transition: transform 0.3s ease;
+     height:500px;
 }
-.seafoodbar {
-  min-height:100vh;
-  width:100%;
-  background-size:cover;
-  background-position:center;
-  overflow:hidden;
-  padding:100px 0 35px 0;
-background: url(../imgs/whiteMarble.jpg);
-}
+
 @media (min-width:576px) {
-  .seafoodbar {
+  .menuPage {
  background: url(../imgs/whiteMarble.jpg);
   }
 }
 @media (min-width:768px) {
-  .seafoodbar {
+  .menuPage {
  background: url(../imgs/whiteMarble.jpg);
   }
 }
 @media (min-width:992px) {
-  .seafoodbar {
+  .menuPage {
     padding:160px 0 70px 0;
   }
 }
-.cocktail{
-   width: 100vw;
-  height: 100vh;
-  background-image: url("../cocktails/Rum-background.jpg");
-  background-position: bottom;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-}
-@media (min-width:576px) {
-  .cocktail {
-  background-image: url("../cocktails/Rum-background.jpg");
-}
-@media (min-width:768px) {
-  .cocktail{
-  background-image: url("../cocktails/Rum-background.jpg");
-  }
-}
-@media (min-width:992px) {
-  .cocktail {
-    padding:160px 0 70px 0;
-  }
-}
+
+/* KEY FRAMES KEY FRAMES KEY FRAMES KEY FRAMES KEY FRAMES KEY FRAMES  */
+
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
@@ -432,5 +425,5 @@ background: url(../imgs/whiteMarble.jpg);
   100% {
     opacity: 1;
     transform: translateX(0vw);
-  }
-}
+  }  
+ }
