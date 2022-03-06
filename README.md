@@ -1,5 +1,4 @@
-# Responsive restaurant Website
-# Final project from the SheCodes Responsive Web class. 
+# Responsive restaurant Website ( Final project from the SheCodes Responsive Web class)
 ####### Overview #######
 I started by creating the structure of the page using HTML. This began with the design of the header, which appears on every page of the Portfolio.
 Then there was the footer, which listed additional contact options such as GitHub, LinkedIn, and email. 
